@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/cas/.well-known/jwks.json
+logging:
+  level:
+    web: debug
+    com.unicom.smartcity: debug
